@@ -1,4 +1,4 @@
-# Finite-memory belief approximation (LQG) - fixed policy experiment
+# Finite memory belief approximation (LQG) - fixed policy experiment
 
 ## Requirements
 - numpy
