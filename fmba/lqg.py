@@ -15,19 +15,12 @@ class Config:
     σ_v: float = 0.20
 
     # cost
-    Q: np.ndarray = None
-    R: np.ndarray = None
-
-    # initial belief
-    m0: np.ndarray = None
-    P0: np.ndarray = None
-
-def make_default_config():
     Q = np.diag([10.0, 1.0])
     R = np.array([[0.1]])
+
+    # initial belief
     m0 = np.array([0.0, 0.0])
     P0 = np.diag([1.0**2, 0.5**2])
-    return Config(Q=Q, R=R, m0=m0, P0=P0)
 
 def make_double_integrator(dt):
     A = np.array([[1.0, dt],

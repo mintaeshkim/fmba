@@ -17,7 +17,7 @@ def kf_update(m_pred, P_pred, C, Σ_v, y):
     return m, P
 
 def kf_update_only(m0, P0, C, Σ_v, y):
-    """Posterior given a single obseΣ_vation y, starting from prior (m0,P0)."""
+    """Posterior given a single observation y, starting from prior (m0,P0)."""
     # This is the boundary belief in the paper: P(x | y)
     S = C @ P0 @ C.T + Σ_v
     K = P0 @ C.T @ np.linalg.inv(S)
@@ -43,7 +43,7 @@ def window_restart_kf(m0, P0, A, B, C, Σ_w, Σ_v, y, u, H):
 
     for t in range(T):
         s = max(0, t - H)
-        # boundary belief at s: posterior from single obseΣ_vation y[s]
+        # boundary belief at s: posterior from single observation y[s]
         m, P = kf_update_only(m0, P0, C, Σ_v, y[s])
 
         # now run KF from s+1 ... t using realized u and y
