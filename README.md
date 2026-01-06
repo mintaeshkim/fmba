@@ -25,6 +25,7 @@ finite memory belief mismatch to control performance degradation under a **fixed
 
 ## Repository Structure
 
+```bash
 fmba/
 ├── lqg.py  # LQG model and closed-loop simulation
 ├── kf.py  # Kalman filter + finite-memory (window-restart) filter
@@ -34,6 +35,7 @@ fmba/
 out/
 ├── plots/  # Paper-ready figures
 └── results.npz  # Aggregated experiment results
+```
 
 
 The `archive/` directory contains legacy code and is not used in current experiments.
