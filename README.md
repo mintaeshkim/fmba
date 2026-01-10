@@ -99,5 +99,10 @@ This will:
 If you use this code in academic work, please cite the corresponding paper.
 
 ```bash
-
+@article{kim2026finite,
+  title={Finite Memory Belief Approximation for Optimal Control in Partially Observable Markov Decision Processes},
+  author={Kim, Mintae},
+  journal={arXiv preprint arXiv:2509.11149},
+  year={2026}
+}
 ```
