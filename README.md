@@ -1,4 +1,4 @@
-# Finite Memory Belief Approximation (FMBA) for Optimal Control in Partially Observable Markov Decision Processes (POMDPs)
+# Finite Memory Belief Approximation (FMBA)
 
 This repository contains a minimal, reproducible experimental framework for studying
 **finite memory belief approximation** in partially observable stochastic control,
